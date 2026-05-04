@@ -1,0 +1,73 @@
+.title {
+    text-align: center;
+    margin: 0px;
+}
+
+.store-name {
+    text-align: center;
+    margin: 0px;
+}
+
+.edit-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.3); 
+}
+
+/* Editabe Values Area */
+.edit-container {
+    background: #eee;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;      
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 100%;
+    max-width: 500px;
+    padding: 4px;
+}
+
+.button-container{
+    text-align: right;
+}
+
+.apply-button {
+    font-size: 12px;
+    background: #3fae2a;
+    color: white;
+    padding: 4px 10px;
+    border: 1px solid #3fae2a;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
+    align-self: flex-end;
+}
+
+.apply-button:hover {
+    background: linear-gradient(to bottom, #7de05f, #4cbf38);
+}
+
+.back-button {
+    font-size: 12px;
+    background: #ae2a2a;
+    color: white;
+    padding: 4px 10px;
+    border: 1px solid #ae2a2a;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
+}
+
+.back-button:hover {
+    background: linear-gradient(to bottom, #e05f5f, #bf3838);
+}
+

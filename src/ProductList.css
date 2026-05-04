@@ -1,0 +1,158 @@
+.title {
+    text-align: center;
+    margin: 0px;
+}
+
+.store-name {
+    text-align: center;
+    margin: 0px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    overflow-y: auto;
+    gap: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
+  
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    height: 220px;  
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.grid-item:hover {
+    background: #ececec;
+    
+}
+
+.grid-item p:nth-child(2) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.product-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.add-button {
+    font-size: 12px;
+    background: #3fae2a;
+    color: white;
+    padding: 4px 10px;
+    border: 1px solid #3fae2a;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
+    align-self: flex-end;
+}
+
+.add-button:hover {
+    background: linear-gradient(to bottom, #7de05f, #4cbf38);
+}
+
+.reset-button {
+    font-size: 12px;
+    background: #ae2a2a;
+    color: white;
+    padding: 4px 10px;
+    border: 1px solid #ae2a2a;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
+}
+
+.reset-button:hover {
+    background: linear-gradient(to bottom, #e05f5f, #bf3838);
+}
+
+.delete-button {
+    font-size: 12px;
+    background: #ae2a2a;
+    color: white;
+    padding: 4px 10px;
+    border: 1px solid #ae2a2a;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background: linear-gradient(to bottom, #e05f5f, #bf3838);
+}
+
+.button-container{
+    display: flex;
+    padding-top: 5px;
+    padding-right: 20px;
+    gap: 5px;
+    justify-content: right;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: flex;            
+    justify-content: center;    
+    align-items: center;       
+
+    background: rgba(0,0,0,0.4);
+}
+
+/* modal box */
+.modal {
+    position: relative;
+    background: #eee;
+    padding: 40px;
+    border-radius: 0px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    padding: 8px;
+    width: 100%;
+}
+
+
+.addProduct-button {
+    font-size: 12px;
+    align-self: flex-end;
+    background: #7ed957;
+    border: 1px solid #3fae2a;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
